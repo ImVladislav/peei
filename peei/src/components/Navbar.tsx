@@ -55,68 +55,22 @@ const Navbar: FC = () => {
           <ul className="dropdown">
             {item.links.map((link) => (
               <li key={link.label}>
-                <Link href={link.href} className={pathname === link.href ? "active" : ""}>
-
-                    {link.label}
-
+                <Link
+                  href={link.href}
+                  className={pathname === link.href ? "active" : ""}
+                >
+                  {link.label}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
       ))}
-      {/* <style jsx>{`
-        nav {
-          display: flex;
-        }
-
-        .nav-item {
-          position: relative;
-          margin-right: 20px;
-        }
-
-        .dropdown {
-          display: none;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          background-color: #fff;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          list-style: none;
-          padding: 10px;
-          border-radius: 4px;
-        }
-
-        .nav-item:hover .dropdown {
-          display: block;
-        }
-
-        .dropdown li {
-          margin: 5px 0;
-        }
-
-        .dropdown a {
-          color: #333;
-          text-decoration: none;
-          font-size: 14px;
-          transition: color 0.3s;
-        }
-
-        .dropdown a:hover {
-          color: #0070f3;
-        }
-
-        .active {
-          font-weight: bold;
-        }
-      `}</style> */}
     </nav>
   );
 };
 
 export default Navbar;
-
-
 
 // const Navbar: FC = () => {
 //   const pathname = usePathname();
