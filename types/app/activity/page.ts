@@ -1,4 +1,4 @@
-// File: C:\Users\Vlad\Desktop\react-48\peei\peei\src\app\activity\page.tsx
+// File: C:\Users\Vlad\Desktop\react-48\peei\src\app\activity\page.tsx
 import * as entry from '../../../../src/app/activity/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
