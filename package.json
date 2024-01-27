@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "sass": "^1.70.0"
+    "sass": "^1.70.0",
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

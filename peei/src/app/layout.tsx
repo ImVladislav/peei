@@ -5,7 +5,6 @@ import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
-
 import "@/scss/globals.css";
 import "@/scss/index.scss";
 
@@ -24,63 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />/
-        <main className="relative overflow-hidden">{children}</main>
+        <Header />/<main className="relative overflow-hidden">{children}</main>
         <Footer />
       </body>
     </html>
   );
 }
-// ГЛЯНЬ ТАКИЙ ВАРІК 
-
-// import "@/scss/globals.css";
-// import "@/scss/index.scss";
-// import type { AppProps } from "next/app";
-// import { Raleway, Fira_Code } from "next/font/google";
-
-// const raleway = Raleway({ subsets: ["latin"] });
-// const firaCode = Fira_Code({
-//   weight: ["300", "400", "500", "600", "700"],
-//   subsets: ["latin"],
-// });
-
-// export default function App({ Component, pageProps }: AppProps) {
-//   return (
-//     <>
-//       <style jsx global>{`
-//         :root {
-//           --raleway: ${raleway.style.fontFamily};
-//           --fira-code: ${firaCode.style.fontFamily};
-//         }
-//       `}</style>
-//       <Component {...pageProps} />;
-//     </>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
@@ -104,4 +52,3 @@ export default function RootLayout({
 //     </html>
 //   );
 // }
-

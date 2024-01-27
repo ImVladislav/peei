@@ -66,6 +66,13 @@ const Navbar: FC = () => {
           </ul>
         </div>
       ))}
+      <Link
+        href="to_contact_page"
+        className="link"
+        style={{ height: "fit-content" }}
+      >
+        Контакти
+      </Link>
     </nav>
   );
 };

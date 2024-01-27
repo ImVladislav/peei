@@ -1,0 +1,22 @@
+.header-contact {
+  display: flex;
+
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.header-contact-phone-and-email-block {
+  display: flex;
+  align-items: center;
+}
+.header-contact-social-block {
+  display: "flex";
+}
+.social-icon {
+  width: 30px;
+  height: 30px;
+
+  &:hover {
+    fill: green;
+    color: green;
+  }
+}
