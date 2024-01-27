@@ -10,7 +10,7 @@
   "start": "next start",
   "lint": "next lint",
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d .next"
+  "deploy": "npm run build && copyfiles -u 1 .next/**/* . && gh-pages -d ."
 
   },
   "dependencies": {
