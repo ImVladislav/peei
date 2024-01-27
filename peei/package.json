@@ -1,8 +1,9 @@
 {
-  "homepage": "https://imvladislav.github.io/peei",
+  "homepage": "https://imvladislav.github.io",
   "name": "peei",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
 "scripts": {
   "dev": "next dev",
   "build": "next build",
