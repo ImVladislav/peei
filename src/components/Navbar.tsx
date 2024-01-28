@@ -13,33 +13,39 @@ const navItems: NavItem[] = [
   {
     title: "Про нас",
     links: [
-      { label: "Про нас 1", href: "/about/1" },
-      { label: "Про нас 2", href: "/about/2" },
-      { label: "Про нас 3", href: "/about/3" },
+      { label: "Засновники", href: "/about/1" },
+      { label: "Правління", href: "/about/2" },
+      { label: "Наша команда", href: "/about/3" },
+      { label: "Наші партнери", href: "/about/4" },
+      { label: "Офіційні документи", href: "/about/5" },
+      { label: "Звіти", href: "/about/6" },
+      { label: "Контакти", href: "/about/7" },
     ],
   },
   {
     title: "Напрямки діяльності",
     links: [
-      { label: "Діяльність 1", href: "/activities/1" },
-      { label: "Діяльність 2", href: "/activities/2" },
-      { label: "Діяльність 3", href: "/activities/3" },
+      { label: "Робота з дітьми та молоддю", href: "/activities/1" },
+      { label: "Направлення діяльності", href: "/activities/2" },
+      { label: "Благодійні акції", href: "/activities/3" },
+      { label: "Охорона довкілля", href: "/activities/3" },
     ],
   },
   {
     title: "Новини",
     links: [
-      { label: "Новини 1", href: "/news/1" },
-      { label: "Новини 2", href: "/news/2" },
-      { label: "Новини 3", href: "/news/3" },
+      { label: "Новини", href: "/news/1" },
+      { label: "Новини2", href: "/news/2" },
+      { label: "Новини3", href: "/news/3" },
+      { label: "Новини4", href: "/news/4" },
     ],
   },
   {
     title: "Підтримати",
     links: [
-      { label: "Підтримка 1", href: "/support/1" },
-      { label: "Підтримка 2", href: "/support/2" },
-      { label: "Підтримка 3", href: "/support/3" },
+      { label: "Волонтерством", href: "/support/1" },
+      { label: "Фінансово", href: "/support/2" },
+      { label: "Партнерством", href: "/support/3" },
     ],
   },
 ];
@@ -51,14 +57,28 @@ const Navbar: FC = () => {
     <nav>
       {navItems.map((item) => (
         <div key={item.title} className="nav-item">
-          <span>{item.title}</span>
+          <span>{item.title}</span>{" "}
+          <svg
+            id={`svg-${item.title}`}
+            width="20px"
+            height="20px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="svg-icon"
+          >
+            <path
+              d="M6 9L12 15L18 9"
+              stroke="#000000"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
           <ul className="dropdown">
             {item.links.map((link) => (
-              <li key={link.label}>
-                <Link
-                  href={link.href}
-                  className={pathname === link.href ? "active" : ""}
-                >
+              <li style={{ padding: "5px" }} key={link.label}>
+                <Link href={link.href} className="link">
                   {link.label}
                 </Link>
               </li>

@@ -2,8 +2,41 @@
   display: flex;
 
   justify-content: space-between;
-  margin: 20px 0px;
+  padding: 20px 0px;
+  padding-left: auto;
+  padding-right: auto;
+
+  background-color: rgb(227, 233, 188);
+  // border-radius: 15px;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
+
+.header-contact-to-center {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0px, auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  margin: 20px 0px;
+
+  // background-color: #2ec194 !important;
+  // border-radius: 15px;
+  // box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+  //   15px 15px 15px rgba(0, 0, 0, 0.1),
+  //   inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+  //   inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
 .header-contact-phone-and-email-block {
   display: flex;
   align-items: center;
