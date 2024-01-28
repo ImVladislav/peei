@@ -14,6 +14,32 @@
     inset 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
+.header__svg-link {
+  // margin-left: 0px;
+  // width: 30px;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 7px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: black;
+  margin: 5px;
+
+  &:hover,
+  &:focus {
+    color: green;
+    fill: green;
+    &::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
 .header-contact-to-center {
   display: flex;
   justify-content: space-between;

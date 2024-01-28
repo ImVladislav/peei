@@ -4,14 +4,19 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { NAV_LINKS } from "@/constants";
 
+interface NavLink {
+  label: string;
+  href: string;
+}
+
 interface NavItem {
-  title: string;
-  links: { label: string; href: string }[];
+  title: NavLink;
+  links: NavLink[];
 }
 
 const navItems: NavItem[] = [
   {
-    title: "Про нас",
+    title: { label: "Про нас", href: "/about" },
     links: [
       { label: "Засновники", href: "/about/1" },
       { label: "Правління", href: "/about/2" },
@@ -23,7 +28,7 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    title: "Напрямки діяльності",
+    title: { label: "Напрямки діяльності", href: "/activities" },
     links: [
       { label: "Робота з дітьми та молоддю", href: "/activities/1" },
       { label: "Направлення діяльності", href: "/activities/2" },
@@ -32,7 +37,7 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    title: "Новини",
+    title: { label: "Новини", href: "/news" },
     links: [
       { label: "Новини", href: "/news/1" },
       { label: "Новини2", href: "/news/2" },
@@ -41,7 +46,7 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    title: "Підтримати",
+    title: { label: "Підтримати", href: "/support" },
     links: [
       { label: "Волонтерством", href: "/support/1" },
       { label: "Фінансово", href: "/support/2" },
@@ -56,12 +61,19 @@ const Navbar: FC = () => {
   return (
     <nav>
       {navItems.map((item) => (
-        <div key={item.title} className="nav-item">
-          <span>{item.title}</span>{" "}
+        <div key={item.title.label} className="nav-item">
+          <Link href={item.title.href}>
+            {/* Remove the <a> tag here */}
+            <span
+              style={{ fontSize: "20px", cursor: "pointer", color: "black" }}
+            >
+              {item.title.label}
+            </span>
+          </Link>{" "}
           <svg
-            id={`svg-${item.title}`}
-            width="20px"
-            height="20px"
+            id={`svg-${item.title.label}`}
+            width="25px"
+            height="25px"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +90,11 @@ const Navbar: FC = () => {
           <ul className="dropdown">
             {item.links.map((link) => (
               <li style={{ padding: "5px" }} key={link.label}>
-                <Link href={link.href} className="link">
+                <Link
+                  style={{ fontSize: "18px" }}
+                  href={link.href}
+                  className="link"
+                >
                   {link.label}
                 </Link>
               </li>
@@ -89,7 +105,7 @@ const Navbar: FC = () => {
       <Link
         href="to_contact_page"
         className="link"
-        style={{ height: "fit-content" }}
+        style={{ height: "fit-content", fontSize: "px" }}
       >
         Контакти
       </Link>

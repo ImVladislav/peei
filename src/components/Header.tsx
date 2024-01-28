@@ -13,13 +13,14 @@ const Header: React.FC = () => {
               style={{
                 display: "flex",
                 alignItems: "center",
-                marginLeft: "20px",
+                // marginLeft: "20px",
                 fontSize: "20px",
               }}
               href="mailto:copeeiua@gmail.com"
             >
               <svg
                 className="social-icon"
+                style={{ margin: "5px" }}
                 viewBox="0 0 30 30"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -46,6 +47,7 @@ const Header: React.FC = () => {
               href="tel:+380506558561"
             >
               <svg
+                style={{ margin: "5px" }}
                 className="social-icon"
                 viewBox="0 0 30 30"
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +65,7 @@ const Header: React.FC = () => {
           </div>
           <div className="social">
             <a
-              className="link"
+              className="header__svg-link "
               style={{
                 // display: "flex",
                 alignItems: "center",
@@ -83,7 +85,7 @@ const Header: React.FC = () => {
               </svg>
             </a>
             <a
-              className="link"
+              className="header__svg-link "
               style={{
                 alignItems: "center",
                 marginLeft: "0px",
@@ -103,7 +105,7 @@ const Header: React.FC = () => {
               </svg>
             </a>
             <a
-              className="link"
+              className="header__svg-link "
               style={{
                 // display: "flex",
                 alignItems: "center",
@@ -129,7 +131,7 @@ const Header: React.FC = () => {
               </svg>
             </a>
             <a
-              className="link"
+              className="header__svg-link "
               style={{
                 // display: "flex",
                 alignItems: "center",
@@ -155,7 +157,7 @@ const Header: React.FC = () => {
             </a>
 
             <a
-              className="link"
+              className="header__svg-link "
               style={{
                 // display: "flex",
                 alignItems: "center",

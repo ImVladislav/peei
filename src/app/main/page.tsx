@@ -1,6 +1,6 @@
 import React from "react";
 import background from "../../../public/background.png";
-
+import { Open_Sans } from "next/font/google";
 const Main = () => {
   const containerStyle = {
     backgroundImage: `url(${background.src})`,

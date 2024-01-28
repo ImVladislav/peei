@@ -1,9 +1,16 @@
-import React from 'react'
+import Link from "next/link";
 
 const AboutUs = () => {
   return (
-    <div>aboutUs</div>
-  )
-}
+    <div>
+      <p>
+        Відвідайте сторінку
+        <Link href="/aboutUs">
+          <button>Кнопка з посиланням</button>
+        </Link>
+      </p>
+    </div>
+  );
+};
 
-export default AboutUs
+export default AboutUs;
