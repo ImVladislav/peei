@@ -3,10 +3,13 @@ import background from "../../../public/background.png";
 
 const Main = () => {
   const containerStyle = {
-    backgroundImage: `url(${background.src})`, // Use background.src to get the URL
+    backgroundImage: `url(${background.src})`,
     backgroundSize: "auto",
     backgroundPosition: "center",
     padding: "20px",
+    // backgroundColor: "rgba(219, 217, 55, 0.7)",
+    // filter: "blur(5px)", // Додано блюр до фону
+    // boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)", // Додано тінь тільки на фон
   };
 
   return (
