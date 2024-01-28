@@ -17,15 +17,14 @@
     background-position: 50%;
     background-repeat: no-repeat;
     width: 100%;
-    padding: 100px 16px 50px;
+    padding: 50px 16px 50px;
   }
   &__title-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  &__title {
-    font-family: "Noto Serif", serif;
+  /* &__title {
     font-size: 7vw;
     line-height: 1.2em;
     font-weight: 500;
@@ -33,16 +32,17 @@
     text-transform: uppercase;
     color: #fff;
     padding-bottom: 100px;
-  }
+  } */
   &__text {
-    font-family: "Noto Serif", serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 4vw;
+
     letter-spacing: 8px;
     line-height: 1.8em;
     color: #fff;
     vertical-align: baseline;
+    user-select: none;
   }
   &__img-first {
     margin-left: -30%;
@@ -53,7 +53,7 @@
   }
   &__text-second {
     padding: 16px;
-    font-family: "Open Sans", serif;
+
     font-size: 18px;
     font-weight: 700;
     color: #666;
@@ -65,4 +65,54 @@
   height: 3px;
   max-width: 80px;
   background: #ffba5a;
+}
+
+/* ________________PROJECTS_________________ */
+
+.project {
+  &__container {
+  }
+  &__title {
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.4em;
+
+    padding: 30px 0;
+  }
+  &__list {
+    display: flex;
+    gap: 10px;
+    padding: 30px 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-image {
+    }
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #666;
+    }
+    &-text {
+      font-size: 16px;
+      font-weight: 500;
+      color: #666;
+      text-align: justify;
+    }
+    &-link {
+      padding: 30px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #333;
+      &:hover,
+      &:focus {
+        color: #da1c1c;
+      }
+    }
+  }
 }

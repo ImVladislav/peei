@@ -7,10 +7,14 @@ const Hero = () => {
         <div className="hero__container">
           <div className="hero__img">
             <div className="hero__title-container">
-              <h1 className="hero__title">Про нас</h1>
-
-              <p className="hero__text">Екологічна безпека</p>
-              <p className="hero__text">Енергетична незалежність</p>
+              <div className="visually-hidden">
+                <h1 className="hero__title">
+                  Платформа еко-енергетичних ініціатив
+                </h1>
+                <div className="line " />
+              </div>
+              <h2 className="hero__text">Екологічна безпека</h2>
+              <h2 className="hero__text">Енергетична незалежність</h2>
             </div>
           </div>
         </div>
@@ -26,20 +30,20 @@ const Hero = () => {
           >
             <Image
               className="hero__img-first"
-              src="/environmental-nonprofit.jpg" // оновіть шлях, якщо потрібно
+              src="/environmental-nonprofit.jpg"
               alt="вітряки"
-              width={480} // зазначте ширину за потреби
-              height={300} // зазначте висоту за потреби
+              width={480}
+              height={300}
             />
             <Image
               className="hero__img-second"
-              src="/environmental-nonprofit-34.jpg" // оновіть шлях, якщо потрібно
+              src="/environmental-nonprofit-34.jpg"
               alt="листя"
-              width={480} // зазначте ширину за потреби
-              height={300} // зазначте висоту за потреби
+              width={480}
+              height={300}
             />
           </div>
-          <div className="line" />
+
           <div>
             <p className="hero__text-second">
               Громадська Організація “Платформа еко-енергетичних ініціатив” – це
