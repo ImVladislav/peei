@@ -1,6 +1,8 @@
 nav {
   display: flex;
   margin-left: auto;
+  align-items: center;
+  text-align: center;
 }
 
 .nav-item {
@@ -8,6 +10,12 @@ nav {
   margin-right: 20px;
   height: fit-content;
   cursor: pointer;
+  display: flex;
+}
+.nav-item:hover .svg-icon {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+  stroke: green; /* Додайте цей рядок, щоб змінити колір на зелений */
 }
 
 .dropdown {
@@ -23,23 +31,33 @@ nav {
   width: max-content;
 }
 
+.nav-links {
+  color: black;
+}
+
 .nav-item:hover .dropdown {
   display: block;
+  transition: transform 1.5s;
 }
 
 .dropdown li {
   margin: 5px 0;
 }
 
-.dropdown a {
+.dropdown {
+  transition: transform 1.5s;
   color: #333;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s;
+  // background-color: #2ec194 !important;
+  // border-radius: 15px;
+  box-shadow: 10px 0px 1px rgba(255, 255, 255, 0.2),
+    5px 5px 15px rgb(0 0 0 / 35%);
 }
 
 .dropdown a:hover {
-  color: #0070f3;
+  color: green;
 }
 
 .active {
