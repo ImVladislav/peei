@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Logo from "../../public/LOGO-BIG.png";
 import Navbar from "./Navbar";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
@@ -211,7 +212,9 @@ const Header: React.FC = () => {
       <div className="container">
         <div className="header">
           {/* Зображення логотипу */}
-          <Image src={Logo} width={300} height={110} alt="Logo" />
+          <Link href="/">
+            <Image src={Logo} width={300} height={110} alt="Logo" />
+          </Link>
           <Navbar />
         </div>
       </div>

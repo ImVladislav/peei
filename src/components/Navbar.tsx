@@ -18,9 +18,9 @@ const navItems: NavItem[] = [
   {
     title: { label: "Про нас", href: "/about" },
     links: [
-      { label: "Засновники", href: "/about/1" },
-      { label: "Правління", href: "/about/2" },
-      { label: "Наша команда", href: "/about/3" },
+      { label: "Засновники", href: "/founders" },
+      { label: "Правління", href: "/rule" },
+      { label: "Наша команда", href: "/team" },
       { label: "Наші партнери", href: "/about/4" },
       { label: "Офіційні документи", href: "/about/5" },
       { label: "Звіти", href: "/about/6" },
