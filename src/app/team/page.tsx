@@ -47,10 +47,8 @@ const Team = () => {
             <div>
               <AboutPersonDescripton
                 name="Гордієнко Микола Андрійович"
-                position="Керівник проекту
-"
-                email="nikolajgordienko638@gmail.com
-"
+                position="Керівник проекту"
+                email="nikolajgordienko638@gmail.com"
               />
             </div>
           </div>
