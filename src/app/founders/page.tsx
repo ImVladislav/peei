@@ -1,5 +1,6 @@
-import bezkor from "../../../public/Volonters/Bezkorowainuy.jpg";
+import bezkor from "../../../public/Volonters/bezkorowainuy.png";
 import glad from "../../../public/Volonters/gladyshko.png";
+import kesha from "../../../public/Volonters/kesha.jpg";
 import {
   AboutPersonImage,
   AboutPersonDescripton,
@@ -8,7 +9,7 @@ import bg from "../../../public/background.png";
 
 const Founders = () => {
   return (
-    <div style={{ backgroundImage: `url(${bg.src})` }}>
+    <div style={{ backgroundImage: `url(${bg.src})`, backgroundSize: "cover" }}>
       <div className="container">
         <h1 className="about__title">Засновники</h1>
         <ul className="about__page">
@@ -33,7 +34,17 @@ const Founders = () => {
                 email=""
               />
             </div>
-            {/* </div> */}
+          </li>
+          <li className="about__person-block">
+            {/* <div className="about__person-block"> */}
+            <AboutPersonImage src={kesha} />
+            <div>
+              <AboutPersonDescripton
+                name="Балахчі Інна Володимирівна"
+                position=""
+                email=""
+              />
+            </div>
           </li>
         </ul>
       </div>

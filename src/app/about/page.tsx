@@ -1,50 +1,274 @@
-// import bezkor from "../../../public/Volonters/Bezkorowainuy.jpg";
-// import glad from "../../../public/Volonters/gladyshko.png";
-// import {
-//   AboutPersonImage,
-//   AboutPersonDescripton,
-// } from "@/components/About/AboutPerson";
-// import bg from "../../../public/background.png";
-
-// const Founders = () => {
-//   return (
-//     <div style={{ backgroundImage: `url(${bg.src})` }}>
-//       <div className="container">
-//         <h1 className="about__title">Засновники</h1>
-//         <div className="about__page">
-//           <div className="about__person-block">
-//             <AboutPersonImage src={bezkor} />
-//             <div>
-//               <AboutPersonDescripton
-//                 name="Безкоровайний Євгеній Олександрович"
-//                 position=""
-//                 email=""
-//               />
-//             </div>
-//           </div>
-//           <div className="about__person-block">
-//             <AboutPersonImage src={glad} />
-//             <AboutPersonDescripton
-//               name="Гладишко Сергій Олексійович"
-//               position=""
-//               email=""
-//             />
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Founders;
-import React from 'react'
-
-const page = () => {
+import Image from "next/image";
+import about1 from "../../../public/about/aboutus1image.png";
+import about2 from "../../../public/about/aboutus2image.jpg";
+import about3 from "../../../public/about/aboutus3image.png";
+import about4 from "../../../public/about/aboutus4image.jpg";
+import about5 from "../../../public/about/aboutus5image.jpg";
+import bg from "../../../public/background.png";
+const About = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <div style={{ backgroundImage: `url(${bg.src})`, backgroundSize: "cover" }}>
+      <div className="container">
+        <h1
+          style={{
+            margin: "20px 0px",
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center",
+          }}
+        >
+          Про нас
+        </h1>
+        <section style={{ display: "flex" }}>
+          <Image
+            className="about__images"
+            style={{ width: "350px" }}
+            src={about1}
+            alt={"about us image"}
+          />
+          <div>
+            <p className="about__text">
+              Наша громадська організація вітає вас у нашій спільноті, де ми
+              об&lsquo;єднуємо зусилля активістів для сприяння сталому та
+              екологічно безпечному майбутньому. За допомогою інноваційних
+              технологій та співпраці з експертами у сфері відновлення ресурсів,
+              ми долучаємо свої зусилля до зменшення негативного впливу відходів
+              на наше середовище. Наша організація активно працює над
+              вдосконаленням технологій переробки вторинної сировини, залучаючи
+              до цієї справи фахівців і бізнесменів, молодь і громадськість,
+              проводить інтерактивні роз’яснювальні заняття серед підлітків,
+              розробляє та впроваджує програми переробки вторинної сировини, щоб
+              зменшити забруднення зовнішнього середовища та сприяти ефективному
+              використанню ресурсів. Відходи стають вихідним матеріалом для
+              нових, сталих виробів, допомагаючи зберегти наше довкілля.
+            </p>
 
-export default page
+            <div className="about__text-block">
+              <h3 className="about__text-block-title">Наші цінності</h3>
+              <ul>
+                <li className="about__text-block-item">
+                  <p>
+                    Відкритість: Чесність і прозорість роблять нашу організацію
+                    більшою та ефективнішою.
+                  </p>
+                </li>
+                <li className="about__text-block-item">
+                  <p>
+                    Співпраця: У нас вірять в силу колективної дії – разом ми
+                    змінюємо світ.
+                  </p>
+                </li>
+                <li className="about__text-block-item">
+                  <p>
+                    Довіра: Взаємна підтримка та віра в смілі дії є основою
+                    нашого спільного шляху.
+                  </p>
+                </li>
+                <li className="about__text-block-item">
+                  <p>
+                    Терміновість: У світі швидких змін ми працюємо чуйно та
+                    ефективно.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section style={{ display: "flex", flexDirection: "row-reverse" }}>
+          <Image
+            className="about__images"
+            src={about2}
+            alt={"about us image"}
+          />
+          <div className="about__text-block">
+            <h3 className="about__text-block-title"> Наші принципи </h3>
+            <ul>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Професіоналізм - Постійне вдосконалення професійних навичок та
+                  знань у відповідності до сучасних стандартів
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Новаторство - Активне впровадження інноваційних ідей та
+                  технологій у роботу.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Об’єктивність - Забезпечення нейтрального та об’єктивного
+                  підходу в усіх справах та прийнятті рішень.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Відповідальність - Турбота про наслідки власних дій на рівні
+                  громадської та екологічної відповідальності.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Екосвідомість - Викладаємо принципи поваги до природи та
+                  прагнемо сформувати екологічну свідомість, організовуючи
+                  заходи та проекти.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Незалежність - Забезпечення незалежності в прийнятті рішень
+                  від зовнішніх впливів чи інтересів.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Прозорість - Забезпечення відкритості та доступності
+                  інформації для всіх зацікавлених сторін.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Спрямованість на результат - Активне вдосконалення та
+                  коригування стратегій для досягнення максимального впливу.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Сталий розвиток - Зобов’язання до постійного розвитку та
+                  адаптації до нових викликів.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section style={{ display: "flex" }}>
+          <Image
+            className="about__images"
+            src={about3}
+            alt={"about us image"}
+          />
+          <div className="about__text-block">
+            {/* <h3 className="about__text-block-title"> Наші принципи </h3> */}
+            <ul>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Наша місія – це завдання створення простору інноваційної
+                  активності в сфері екології та енергетики з метою формування
+                  країни свідомих громадян. Ми розглядаємо себе як каталізатора
+                  позитивних змін, що об&lsquo;єднує усіх зацікавлених сторін
+                  для реалізації проектів розвитку територіальних громад та
+                  секторів національної економіки, а також підтримки
+                  інноваційних ідей у сфері екології та енергетики
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Ми прагнемо до високого стандарту якості в реалізації наших
+                  проектів, спрямованих на забезпечення сталого розвитку та
+                  збалансованого використання природних ресурсів. Наша
+                  діяльність орієнтована на створення інноваційних рішень, які
+                  не лише сприяють ефективному використанню енергії, але й
+                  зменшують негативний вплив нанавколишнє середовище. Ми віримо,
+                  що об&lsquo;єднання сил індивідів, компаній, та організацій з
+                  різних галузей може
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Ми віримо, що об&lsquo;єднання сил індивідів, компаній, та
+                  організацій з різних галузей може призвести до створення
+                  інтегрованих та революційних рішень для проблем екології та
+                  енергетики. Зацікавлені сторони мають унікальну можливість
+                  співпраці та обміну ідеями, спрямованими на покращення стану
+                  нашого оточення.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Наша місія є невід&lsquo;ємною частиною формування свідомого
+                  громадянського суспільства, де кожен може внести свій внесок у
+                  створення сталого та здорового майбутнього. Запрошуємо всіх,
+                  хто поділяє нашу віру у можливості позитивних змін,
+                  приєднатися до нашої спільноти та внести свою частинку у
+                  велику мозаїку екологічного та енергетичного розвитку
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section style={{ display: "flex", flexDirection: "row-reverse" }}>
+          <Image
+            className="about__images"
+            src={about4}
+            alt={"about us image"}
+          />
+          <div className="about__text-block">
+            <h3 className="about__text-block-title">
+              Наша Роль у Збереженні Навколишнього Середовища  
+            </h3>
+            <ul>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Наша організація приділяє особливу увагу питанням охорони
+                  довкілля, розуміючи важливість нашого внеску в збереження
+                  навколишнього середовища. Ми розглядаємо проблему екології як
+                  необхідний аспект нашої діяльності та визнаємо, що маємо
+                  безпосередню відповідальність за стан навколишнього
+                  середовища.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  У наших ініціативах головними компонентами є використання
+                  інноваційних технологій та досягнення енергоефективності. Ми
+                  систематично впроваджуємо нові технології, спрямовані на
+                  зменшення викидів, оптимізацію енергоспоживання та підвищення
+                  ефективності використання відновлювальних джерел енергії
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section style={{ display: "flex" }}>
+          <Image
+            className="about__images"
+            src={about5}
+            alt={"about us image"}
+            style={{ width: "550px" }}
+          />
+          <div className="about__text-block">
+            <h3 className="about__text-block-title">
+              Наша Роль у Збереженні Навколишнього Середовища  
+            </h3>
+            <ul>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Окрім цього, ми активно займаємося переробкою пластикових
+                  відходів, щоб зменшити негативний вплив цього матеріалу на
+                  довкілля. Наша організація використовує передові технології та
+                  процеси для перетворення пластикових відходів у вторсировину,
+                  сприяючи тим самим у зменшенні кількості сміття та уникненні
+                  його негативного впливу на природу.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Ми також враховуємо європейські та міжнародні стандарти щодо
+                  охорони довкілля, намагаючись не лише відповідати цим
+                  стандартам, але й перевершувати їх, створюючи сталий та
+                  збалансований підхід до розв&lsquo;язання екологічних проблем.
+                  Ми прагнемо до відновлення та підтримки екосистем, а також
+                  ведемо активну роботу зі зменшення відходів та заохочуємо
+                  використання вторсировини як ключового елементу в цьому
+                  процесі. 
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+};
+
+export default About;

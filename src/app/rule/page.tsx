@@ -1,5 +1,5 @@
 import glad from "../../../public/Volonters/gladyshko.png";
-import bezkor from "../../../public/Volonters/Bezkorowainuy.jpg";
+import bezkor from "../../../public/Volonters/bezkorowainuy.png";
 import gordilona from "../../../public/Volonters/gordienkoIlona.jpg";
 import {
   AboutPersonImage,
@@ -9,7 +9,7 @@ import bg from "../../../public/background.png";
 
 const Founders = () => {
   return (
-    <div style={{ backgroundImage: `url(${bg.src})` }}>
+    <div style={{ backgroundImage: `url(${bg.src})`, backgroundSize: "cover" }}>
       <div className="container">
         <h1 className="about__title">Правління</h1>
         <div className="about__page">
@@ -19,7 +19,9 @@ const Founders = () => {
               <AboutPersonDescripton
                 name="Безкоровайний Євгеній Олександрович"
                 position="Заступник голови огранізації"
-                email=""
+                email="mtr1289@gmail.com
+                
+                  "
               />
             </div>
           </div>
