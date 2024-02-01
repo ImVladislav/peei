@@ -1,14 +1,14 @@
 {
   "/_not-found": "app/_not-found.js",
-  "/about/page": "app/about/page.js",
   "/activity/page": "app/activity/page.js",
-  "/environmentalProtection/page": "app/environmentalProtection/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/founders/page": "app/founders/page.js",
   "/main/page": "app/main/page.js",
-  "/page": "app/page.js",
-  "/rule/page": "app/rule/page.js",
+  "/news/page": "app/news/page.js",
   "/team/page": "app/team/page.js",
+  "/rule/page": "app/rule/page.js",
+  "/environmentalProtection/page": "app/environmentalProtection/page.js",
   "/work-with-teens/page": "app/work-with-teens/page.js",
-  "/news/page": "app/news/page.js"
+  "/about/page": "app/about/page.js",
+  "/page": "app/page.js"
 }
