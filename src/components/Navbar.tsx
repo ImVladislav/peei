@@ -30,19 +30,19 @@ const navItems: NavItem[] = [
   {
     title: { label: "Напрямки діяльності", href: "/activities" },
     links: [
-      { label: "Робота з дітьми та молоддю", href: "/activities/1" },
+      { label: "Робота з дітьми та молоддю", href: "/work-with-teens" },
       { label: "Направлення діяльності", href: "/activities/2" },
       { label: "Благодійні акції", href: "/activities/3" },
-      { label: "Охорона довкілля", href: "/activities/3" },
+      { label: "Охорона довкілля", href: "/environmentalProtection" },
     ],
   },
   {
     title: { label: "Новини", href: "/news" },
     links: [
-      { label: "Новини", href: "/news/1" },
-      { label: "Новини2", href: "/news/2" },
-      { label: "Новини3", href: "/news/3" },
-      { label: "Новини4", href: "/news/4" },
+      { label: "Новини", href: "/news" },
+      // { label: "Новини2", href: "/news/2" },
+      // { label: "Новини3", href: "/news/3" },
+      // { label: "Новини4", href: "/news/4" },
     ],
   },
   {
