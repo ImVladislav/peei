@@ -56,14 +56,6 @@
       "static/chunks/main-app-124bd50d488ede1f.js",
       "static/chunks/app/main/page-c5b4d8b382cc9abf.js"
     ],
-    "/news/page": [
-      "static/chunks/webpack-fce016ed20f9cf04.js",
-      "static/chunks/fd9d1056-cc48c28d170fddc2.js",
-      "static/chunks/69-9e7cba05548ccc03.js",
-      "static/chunks/main-app-124bd50d488ede1f.js",
-      "static/chunks/749-47f912dafc93afba.js",
-      "static/chunks/app/news/page-9d96517cb65d57d4.js"
-    ],
     "/page": [
       "static/chunks/webpack-fce016ed20f9cf04.js",
       "static/chunks/fd9d1056-cc48c28d170fddc2.js",
@@ -97,6 +89,14 @@
       "static/chunks/main-app-124bd50d488ede1f.js",
       "static/chunks/749-47f912dafc93afba.js",
       "static/chunks/app/work-with-teens/page-9a015ca714ca99c2.js"
+    ],
+    "/news/page": [
+      "static/chunks/webpack-fce016ed20f9cf04.js",
+      "static/chunks/fd9d1056-cc48c28d170fddc2.js",
+      "static/chunks/69-9e7cba05548ccc03.js",
+      "static/chunks/main-app-124bd50d488ede1f.js",
+      "static/chunks/749-47f912dafc93afba.js",
+      "static/chunks/app/news/page-9d96517cb65d57d4.js"
     ]
   }
 }
