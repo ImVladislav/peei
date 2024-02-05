@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 // import "./globals.css";
 import { Mulish } from "next/font/google";
 import Footer from "@/components/Footer";
@@ -8,7 +8,7 @@ import Header from "@/components/Header";
 import "@/scss/globals.css";
 import "@/scss/index.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 const mulish = Mulish({ subsets: ["latin"] });
 
