@@ -19,13 +19,20 @@ const About = () => {
         >
           Про нас
         </h1>
-        <section style={{ display: "flex" }}>
+        <section
+          style={{
+            display: "flex",
+            flexDirection: "row-reverse",
+            alignItems: "center",
+          }}
+        >
           <Image
             className="about__images"
             style={{ width: "350px" }}
             src={about1}
             alt={"about us image"}
           />
+
           <div>
             <p className="about__text">
               Наша громадська організація вітає вас у нашій спільноті, де ми
@@ -74,14 +81,21 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section style={{ display: "flex", flexDirection: "row-reverse" }}>
+        <h3 className="about__text-block-title"> Наші принципи </h3>
+        <section
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "row-reverse",
+          }}
+        >
           <Image
             className="about__images"
             src={about2}
             alt={"about us image"}
           />
           <div className="about__text-block">
-            <h3 className="about__text-block-title"> Наші принципи </h3>
+            {/* <h3 className="about__text-block-title"> Наші принципи </h3> */}
             <ul>
               <li className="about__text-block-item">
                 <p className="about__text">
@@ -141,7 +155,7 @@ const About = () => {
             </ul>
           </div>
         </section>
-        <section style={{ display: "flex" }}>
+        <section style={{ alignItems: "center", display: "flex" }}>
           <Image
             className="about__images"
             src={about3}
@@ -196,16 +210,25 @@ const About = () => {
             </ul>
           </div>
         </section>
-        <section style={{ display: "flex", flexDirection: "row-reverse" }}>
+        <h3 className="about__text-block-title">
+          Наша Роль у Збереженні Навколишнього Середовища  
+        </h3>
+        <section
+          style={{
+            alignItems: "center",
+            display: "flex",
+            flexDirection: "row-reverse",
+          }}
+        >
           <Image
             className="about__images"
             src={about4}
             alt={"about us image"}
           />
           <div className="about__text-block">
-            <h3 className="about__text-block-title">
+            {/* <h3 className="about__text-block-title">
               Наша Роль у Збереженні Навколишнього Середовища  
-            </h3>
+            </h3> */}
             <ul>
               <li className="about__text-block-item">
                 <p className="about__text">
@@ -229,7 +252,10 @@ const About = () => {
             </ul>
           </div>
         </section>
-        <section style={{ display: "flex" }}>
+        <h3 className="about__text-block-title">
+          {/* Наша Роль у Збереженні Навколишнього Середовища   */}
+        </h3>
+        <section style={{ alignItems: "center", display: "flex" }}>
           <Image
             className="about__images"
             src={about5}
@@ -237,9 +263,9 @@ const About = () => {
             style={{ width: "550px" }}
           />
           <div className="about__text-block">
-            <h3 className="about__text-block-title">
+            {/* <h3 className="about__text-block-title">
               Наша Роль у Збереженні Навколишнього Середовища  
-            </h3>
+            </h3> */}
             <ul>
               <li className="about__text-block-item">
                 <p className="about__text">
@@ -264,6 +290,96 @@ const About = () => {
                 </p>
               </li>
             </ul>
+          </div>
+        </section>
+        <h3 className="about__text-block-title">Наші Цілі  </h3>
+        <section style={{ alignItems: "center", display: "flex" }}>
+          {/* <Image
+            className="about__images"
+            src={about5}
+            alt={"about us image"}
+            style={{ width: "550px" }}
+          /> */}
+          <div className="about__text-block">
+            <ol>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  *Інновації в технологіях: Сприяти розробці та впровадженню
+                  передових, енергозберігаючих та екологічно безпечних
+                  технологій у всіх сферах економіки
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Стандарти в енергетиці та екології: Брати активну участь у
+                  розробці та впровадженні європейських та міжнародних
+                  стандартів у сфері екології та енергетики.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Поліпшення екологічної ситуації: Активно взаємодіяти з
+                  урядовими та громадськими організаціями для покращення
+                  екологічної ситуації в Україні.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Підтримка громад: Захищати екологічні, соціальні та економічні
+                  інтереси громад та членів організації
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Допомога постраждалим: Надавати допомогу регіонам, що
+                  постраждали від екологічних, енергетичних катастроф та
+                  конфліктів.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Підтримка інновацій: Сприяти створенню та впровадженню
+                  інноваційних проєктів в сфері екології та енергетики.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Збереження біорізноманіття: Активно взаємодіяти з
+                  організаціями та науковими установами для збереження та
+                  відновлення біорізноманіття
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Освіта та обізнаність: Розповсюджувати інформацію та навчати
+                  громадян про екологічно відповідальний спосіб життя.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Інфраструктурна розвиток: Сприяти створенню стійкої
+                  інфраструктури та інклюзивній і сталій індустріалізації.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Глобальне партнерство: Зміцнювати засоби реалізації та
+                  активізацію глобального партнерства для сталого розвитку.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Боротьба із змінами клімату: Організувати та підтримувати
+                  заходи для боротьби зі змінами клімату та їх наслідками.
+                </p>
+              </li>
+              <li className="about__text-block-item">
+                <p className="about__text">
+                  Сприяння стартапам: Заохочувати та підтримувати стартапи,
+                  спрямовані на розв&rsquo;язання екологічних завдань.
+                </p>
+              </li>
+            </ol>
           </div>
         </section>
       </div>
